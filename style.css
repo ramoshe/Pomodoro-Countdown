@@ -1,47 +1,33 @@
 .container {
-  background-color: #355068;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height:75px;
-  width:360px;
-  border:8px solid #d5d5ce;
+  background-color: #007070;
+  width:440px;
+  height: 340px;
+  border:7px solid #919191;
 }
 
-#tomato {
-  font-size: 50px;
-  position: relative;
+#label {
   bottom: 5px;
   background:transparent;
+  width: 100%;
+}
+
+#label button {
+  font-size: 50px;
 }
 
 #countdown {
   text-align: center;
   font-size: 50px;
-  font-family: "Glacial Indifference";
   font-weight: 600;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   color: white;
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button {
-  background-color: #355068;
+  background: transparent;
   border: 0;
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.imageContainer {
-  height: 40px;
-  width: 40px;
-}
-
-.imageContainer img {
-  width:auto;
-  height:100%;
-}
-
-#resetButton {
-  margin-right: 15px;
 }

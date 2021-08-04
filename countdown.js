@@ -1,21 +1,21 @@
 const secondsInaMinute = 60;
 const minutes_25 = secondsInaMinute * 25;
-const minutes_50 = secondsInaMinute * 50;
+const minutes_5 = secondsInaMinute * 5;
 const seconds_10 = 10; //for testing
 
 let interval;
 let isPaused = true;
 let countdownWasStarted = false;
-let pomodoroDuration = minutes_50; //by default
+let pomodoroDuration = minutes_25; //by default
 let timeLeftInSeconds = 0;
 
 // Button Handlers
 function updateDuration() {
   //The pomodoro duration is by default 50, but we can change to 25!
-  if(pomodoroDuration == minutes_50 ) {
-    pomodoroDuration = minutes_25;
+  if(pomodoroDuration == minutes_25 ) {
+    pomodoroDuration = minutes_5;
   } else {
-    pomodoroDuration = minutes_50;
+    pomodoroDuration = minutes_25;
   }
 
   timeLeftInSeconds = pomodoroDuration
@@ -87,13 +87,19 @@ function resetCountdown() {
 
 // View Updates
 function updatePlayPauseButton() {
-  let playPauseImageSrc;
+  let playPauseSVG;
   if(isPaused) {
-    playPauseImageSrc = "playButton4x.png"
+    playPauseSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" height="70" width="70" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+      </svg>`;
   } else {
-    playPauseImageSrc = "pauseButton4x.png"
+    playPauseSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" height="70" width="70" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+      </svg>`;
   }
-  document.getElementById("playPause").src = playPauseImageSrc;
+  document.getElementById("playPause").innerHTML = playPauseSVG;
 }
 
 function updateTimeString() {
