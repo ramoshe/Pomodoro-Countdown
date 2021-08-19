@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/hellomayuko/Pomodoro-Countdown">
-    🍅
+    🍅 Link to the original repo by hellomayuko
   </a>
 
   <h3 align="center">Pomodoro Countdown Timer</h3>
@@ -14,13 +14,17 @@
 
 ## About The Project
 
-An interactive Pomodoro Counter widget for OBS.
+This is the original layout of the timer:
 
-![Pomo Counter](Design.png)
+![Pomo Counter](readme/originalDesign.png)
+
+My goal with this forked repo is to customize it for my own stream.
+
+# Instructions provided by hellomayuko
 
 ## Installation
 
-1. Clone the repo or download the zip [here](https://github.com/hellomayuko/Pomodoro-Countdown/archive/master.zip)
+1. Clone the original repo or download the zip [here](https://github.com/hellomayuko/Pomodoro-Countdown/archive/master.zip)
 
    ```sh
    git clone https://github.com/hellomayuko/Pomodoro-Countdown.git
