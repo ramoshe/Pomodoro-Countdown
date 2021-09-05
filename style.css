@@ -3,7 +3,7 @@
 
 .container {
   background: rgb(196,95,0);
-  background: linear-gradient(0deg, rgba(196,95,0,1) 0%, rgba(255,217,163,1) 100%);
+  background: linear-gradient(0deg, #c8553d 0%, #ffd5c2 100%);
   width:430px;
   height: 480px;
   border:10px solid dimgray;
@@ -35,11 +35,11 @@ button {
   font-family: 'Teko', sans-serif;
   text-align: center;
   line-height: 80%;
-  color: white;
+  color: #007777;
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 7px black;
+  text-shadow: 2px 2px 3px black;
 }
 
 #countdown {
@@ -49,7 +49,7 @@ button {
   font-family: 'Pacifico', Helvetica, sans-serif;
   color: white;
   margin-top: -50px;
-  text-shadow: 2px 2px 7px black;
+  text-shadow: 3px 3px 7px black;
 }
 
 #buttons {
