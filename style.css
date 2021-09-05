@@ -1,34 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Teko:bold');
+
 .container {
-  background-color: #007070;
-  width:440px;
-  height: 340px;
-  border:7px solid #919191;
+  background: rgb(196,95,0);
+  background: linear-gradient(0deg, rgba(196,95,0,1) 0%, rgba(255,217,163,1) 100%);
+  width:430px;
+  height: 480px;
+  border:10px solid dimgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 14px 14px #00000077;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0px;
+  outline: 0;
 }
 
 #label {
   bottom: 5px;
   background:transparent;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin-bottom: -10px;
 }
 
 #label button {
-  font-size: 50px;
+  font-size: 140px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  line-height: 80%;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 7px black;
 }
 
 #countdown {
   text-align: center;
-  font-size: 50px;
+  font-size: 150px;
   font-weight: 600;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Pacifico', Helvetica, sans-serif;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: -50px;
+  text-shadow: 2px 2px 7px black;
 }
 
-button {
-  background: transparent;
-  border: 0;
-  padding-left: 0px;
-  padding-right: 0px;
-  outline: 0;
+#buttons {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+#playPause, #restart {
+  color: black;
+  padding: 0px 40px 50px 40px;
 }

@@ -1,6 +1,7 @@
 const secondsInaMinute = 60;
 const minutes_25 = secondsInaMinute * 25;
 const minutes_5 = secondsInaMinute * 5;
+const minutes_15 = secondsInaMinute * 15;
 const seconds_10 = 10; //for testing
 
 let interval;
@@ -12,10 +13,16 @@ let timeLeftInSeconds = 0;
 // Button Handlers
 function updateDuration() {
   //The pomodoro duration is by default 50, but we can change to 25!
-  if(pomodoroDuration == minutes_25 ) {
+  const labelButton = document.querySelector('#labelButton');
+  if(pomodoroDuration === minutes_25 ) {
     pomodoroDuration = minutes_5;
-  } else {
+    labelButton.innerHTML = 'Short Break';
+  } else if (pomodoroDuration === minutes_5) {
+    pomodoroDuration = minutes_15;
+    labelButton.innerHTML = 'Long Break';
+  } else if (pomodoroDuration === minutes_15) {
     pomodoroDuration = minutes_25;
+    labelButton.innerHTML = 'Work Time';
   }
 
   timeLeftInSeconds = pomodoroDuration
